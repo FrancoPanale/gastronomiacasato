@@ -46,7 +46,7 @@ body {
 .header .logo img {
     width: 40%;
     transition: all 0.5s;
-    margin:10px;
+    margin:10%;
     border-radius: 100%;
 }
 
@@ -134,36 +134,7 @@ body {
     right: 45px;
     font-size: 65px;
 }
-
-@media screen and (max-height:450px) {
-    .header .overlay a {
-        font-size: 20px;
-    }
-
-    .header .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    .nav-h,
-    .redes-nav {
-        display: none;
-    }
-
-    .menu {
-        display: inherit;
-    }
-
-    .menu img {
-        width: 150px;
-    }
-}
-
-                    /* HEADER HASTA ACÁ */
+                   /* HEADER HASTA ACÁ */
 
 .presentacion {
     display: flex;
@@ -345,3 +316,56 @@ footer{
 .f-redes a img{
     width: 70px;
 }
+
+
+
+                /*MEDIA QUERIES*/
+
+                @media screen and (max-height:450px) {
+                    .header .overlay a {
+                        font-size: 20px;
+                    }
+                
+                    .header .overlay .close {
+                        font-size: 40px;
+                        top: 15px;
+                        right: 35px;
+                    }
+                }
+                
+                @media screen and (max-width: 800px) {
+                    .header .logo{
+                        width: 80%;
+                    }
+                    .header .logo h1{
+                        font-size: 3rem;
+                    }
+                    .nav-h,
+                    .redes-nav {
+                        display: none;
+                    }
+                
+                    .menu {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        margin: 0 5% 0 0;
+                    }
+                
+                    .menu img {
+                        width: 150px;
+                    }
+                    .presentacion{
+                        flex-direction: column;
+                    }
+                    .presentacion img{
+                        width: 100%;
+                    }
+
+                }
+
+                @media screen and (max-width: 600px){
+                    .header .logo{
+                        width: 60%;
+                    }
+                }
