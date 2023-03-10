@@ -50,11 +50,20 @@
         </div>
 </header>
     <main class="">
-        <form action="">
-            <input class="form-control" type="text" placeholder="Nombre">
-            <input class="form-control" type="email" placeholder="E-mail">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejame tu Consulta!"></textarea>
-            <button type="button" class="btn btn-dark">Enviar</button>
+        <form action="../php/send-contact.php" method="POST">
+            <div>            
+                <label for="input-name">Ingresa tu Nombre:</label>
+                <input class="form-control" type="text" placeholder="Nombre" id="input-name" name="name">
+            </div>
+            <div>
+                <label for="input-mail">Ingresa tu E-mail:</label>
+                <input class="form-control" type="email" placeholder="E-mail" id="input-mail" name="email">
+            </div>
+            <div>
+                <label for="exampleFormControlTextarea1">Dejame tu Consulta:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejame tu Consulta" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
         </form>
     </main>
     <footer>
