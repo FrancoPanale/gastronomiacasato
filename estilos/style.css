@@ -385,4 +385,33 @@ footer{
                     .box{
                         display: none;
                     }
+                    .menu-box h2{
+                        font-size: 2rem;
+                    }
+                    .menu-contain{
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                    }
+                    .menu-box .menu-contain h3{
+                        font-size: 1.5rem;
+                    }
+                    .menu-box .menu-contain li{
+                        font-size: 1rem;
+                    }
+                    .menu-1,.menu-2,.menu-3,.menu-4{
+                        width: 100%;
+                        border-radius: 70px 15px;
+                    }
+                    footer .f-info p{
+                        font-size: 1.2rem;
+                    }
+                    footer .f-info a{
+                        display: none;
+                    }
+                    footer .f-redes{
+                        position: fixed;
+                        bottom: 0;
+                        gap:15px;
+                        margin: 0 25%;
+                    }
                 }
