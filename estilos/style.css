@@ -79,7 +79,8 @@ body {
 
 .header .logo a img:hover,
 .header .redes-nav img:hover,
-.header .nav-h ul li:hover {
+.header .nav-h ul li:hover,
+footer .f-redes a img:hover {
     scale: 1.2;
 }
 
@@ -376,7 +377,7 @@ footer{
                     }
                 }
 
-                @media screen and (max-width: 650px){
+                @media screen and (max-width: 850px){
                     .header .logo{
                         width: 60%;
                     }
@@ -422,6 +423,7 @@ footer{
                     }
                     footer .f-redes img{
                         width: 35px;
+                        transition: all 0.5s;
                     }
                     .fran-copy{
                         display:none;
