@@ -352,7 +352,12 @@ footer{
                     .redes-nav {
                         display: none;
                     }
-                
+                    .overlay-content a{
+                        text-decoration: none;
+                    }
+                .overlay-content a:hover{
+                    color:#ffbc0e;
+                }
                     .menu {
                         display: flex;
                         flex-direction: row;
@@ -402,16 +407,23 @@ footer{
                         width: 100%;
                         border-radius: 70px 15px;
                     }
-                    footer .f-info p{
-                        font-size: 1.2rem;
+                    .menu-4{
+                        margin-bottom: 30%;
                     }
-                    footer .f-info a{
+                    footer .f-info {
                         display: none;
                     }
-                    footer .f-redes{
+                    footer{
+                        padding: 35px;
+                        width: 100%;
                         position: fixed;
                         bottom: 0;
                         gap:15px;
-                        margin: 0 25%;
+                    }
+                    footer .f-redes img{
+                        width: 50px;
+                    }
+                    .fran-copy{
+                        display:none;
                     }
                 }
